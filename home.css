@@ -16,7 +16,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  /* make images flexible */
+
   img {
     max-width: 100%;
   }
@@ -29,7 +29,7 @@ body {
   header {
     border-bottom: 10px solid #d98555;
   }
-  /* navbar styling */
+
   nav ul {
     padding: 0;
     margin: 0;
@@ -42,11 +42,11 @@ body {
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
-  /* max width on the image in pixels */
+
   nav .logo img {
     max-width: 150px;
   }
-  /* flex basis on the image container, li */
+ 
   nav .logo {
     flex-basis: 100%;
     text-align: center;
@@ -59,12 +59,12 @@ body {
   nav a:hover {
     color: #d98555;
   }
-  /* establishes a white background */
+ 
   .main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
   }
-  /* sits inside of the white background, centered */
+
   .main {
     max-width: 1200px;
     margin: 0 auto;
