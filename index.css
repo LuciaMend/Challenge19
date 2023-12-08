@@ -12,9 +12,9 @@ h1 {
   font-size: 2rem;
   margin-bottom: 0;
 }
-
-img {
+iframe {
   max-width: 100%;
+  justify-content: center;
 }
 a {
   color: #59331d;
@@ -25,27 +25,21 @@ a:hover {
 header {
   border-bottom: 10px solid #d98555;
 }
-
+/*NAVIGATION MENU*/
+nav{
+align-self: flex-end;
+}
 nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
+  display: flex; 
   flex-flow: row wrap;
-  justify-content: center;
 }
 nav li {
+  list-style-type: none;
   margin: 0 1rem 1rem 1rem;
   font-size: 1.3rem;
-}
-
-nav .logo img {
-  max-width: 150px;
-}
-
-nav .logo {
-  flex-basis: 100%;
-  text-align: center;
 }
 nav a {
   color: white;
@@ -56,62 +50,94 @@ nav a:hover {
   color: #d98555;
 }
 
+/*LOGO*/
+.logo img {
+  max-width: 150px;
+}
+
+.logo {
+  flex-basis: 30%;
+}
+
+/*LOGO-NAVIGATION_FLEX CONTAINER*/
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+/*BACKGROUND*/
 .main-bkgd {
   background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
   padding-bottom: 200px;
 }
 
-.main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+/*GRID-CONTENT*/
+.grid-container {
+display: grid;
+gap: 10px;
+grid-template-columns: 1fr 1fr;
+padding: 10px;
 }
-article {
-  flex-basis: 73%;
+.grid-item {
+padding: 10px;
 }
-figure {
-  margin: 3rem 0 0 0;
-  flex-basis: 25%;
-  background-color: none;
-  border-radius: 25px;
-}
-figure img {
-  flex-basis: 25%;
-  border-radius: 10px;
-}
+/*BUTTON*/
 .button {
-  display: inline-block;
-  background-color: #59331D;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  margin: 0;
-  color: #f2f2f2;
-  text-decoration: none;
-  border: 3px solid #59331d;
+display: inline-block;
+background-color: #59331D;
+border-radius: 10px;
+padding: 0.5rem 1rem;
+margin: 0.5rem;
+color: #f2f2f2;
+text-decoration: none;
+border: 3px solid #59331d;
 }
 .button:hover {
-  background-color: #f2f2f2;
-  color: #59331d;
+background-color: #f2f2f2;
+color: #59331d;
+}
+
+/* sits inside of the white background, centered */
+.main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+/*PAGE INFORMATION*/
+article {
+flex-basis: 73%;
+}
+
+/*FOOTER*/
+figure {
+margin: 0;
+flex-basis: 25%;
+background-color: none;
+border-radius: 25px;
+}
+figure img {
+flex-basis: 25%;
+border-radius: 10px;
 }
 footer {
-  color: #f2f2f2;
-  text-align: center;
-  border-top: 10px solid #d98555;
+color: #f2f2f2;
+text-align: center;
+border-top: 10px solid #d98555;
 }
 footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
 }
 footer a {
-  color: #f2f2f2;
-  font-size: 2rem;
-  display: block;
-  margin: 0 1rem 3rem 1rem;
+color: #f2f2f2;
+font-size: 2rem;
+display: block;
+margin: 0 1rem 3rem 1rem;
 }

@@ -1,104 +1,133 @@
 body {
-    background-color: #082B59;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
-  }
-  h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-  }
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+iframe {
+  max-width: 100%;
+  justify-content: center;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
 
-  img {
-    max-width: 100%;
-  }
-  a {
-    color: #59331d;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  header {
-    border-bottom: 10px solid #d98555;
-  }
+/*NAVIGATION MENU*/
+nav{
+align-self: flex-end;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex; 
+  flex-flow: row wrap;
+}
+nav li {
+  list-style-type: none;
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
 
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  nav li {
-    margin: 0 1rem 1rem 1rem;
-    font-size: 1.3rem;
-  }
+/*LOGO*/
+.logo img {
+  max-width: 150px;
+}
 
-  nav .logo img {
-    max-width: 150px;
-  }
+.logo {
+  flex-basis: 30%;
+}
 
-  nav .logo {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  nav a:hover {
-    color: #d98555;
-  }
+/*LOGO-NAVIGATION_FLEX CONTAINER*/
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
-  .main-bkgd {
-    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
-    padding-bottom: 200px;
-  }
+/*BACKGROUND*/
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 200px;
+}
 
-  .main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-  article {
-    flex-basis: 73%;
-  }
-  figure {
-    margin: 3rem 0 0 0;
-    flex-basis: 25%;
-    background-color: none;
-    border-radius: 25px;
-  }
-  figure img {
-    flex-basis: 25%;
-    border-radius: 10px;
-  }
-  
-  footer {
-    color: #f2f2f2;
-    text-align: center;
-    border-top: 10px solid #d98555;
-  }
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  footer a {
-    color: #f2f2f2;
-    font-size: 2rem;
-    display: block;
-    margin: 0 1rem 3rem 1rem;
-  }
+/*GRID-CONTENT*/
+.grid-container {
+display: grid;
+gap: 10px;
+grid-template-columns: 1fr 1fr;
+padding: 10px;
+}
+.grid-item1 {
+justify-content: center;
+align-self:center;
+}
+.grid-item {
+padding: 10px;
+}
+
+/*MAIN PAGE SET UP*/
+.main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+/*PAGE INFORMATION*/
+article {
+flex-basis: 73%;
+}
+
+/*FOOTER*/
+figure {
+margin: 3rem 0 0 0;
+flex-basis: 25%;
+background-color: none;
+border-radius: 25px;
+}
+figure img {
+flex-basis: 25%;
+border-radius: 10px;
+}
+footer {
+color: #f2f2f2;
+text-align: center;
+border-top: 10px solid #d98555;
+}
+footer ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+}
+footer a {
+color: #f2f2f2;
+font-size: 2rem;
+display: block;
+margin: 0 1rem 3rem 1rem;
+}
